@@ -1,0 +1,190 @@
+/*************************************************************
+  Written by Natalie Murakwani, Term 1 2023
+  Style a basic W3.CSS interface.
+    v1 Basic layout of landing & game pages.
+*************************************************************/
+html, body {
+  margin: 0px;
+  padding: 0px;
+  font-family: tahoma;
+  color: black;
+}
+
+.headerH{
+  height: 15vh;
+  padding-bottom: 70px;
+}
+
+.mainH {
+  height: 76vh;
+}
+
+canvas {
+  display: block;
+}
+
+.cnv {
+  display: block;
+}
+
+/*---------------------------------------------------------*
+ LANDING PAGE STYLING
+/*---------------------------------------------------------*/
+#gm_landingPage{
+  display:block;
+  height: 0vh;
+}
+
+#if_loginBtn {
+  display: block;   
+
+/*---------------------------------------------------------*
+ LOBBY PAGE STYLING
+/*---------------------------------------------------------*/
+html, body , .container {
+  height: 100%;
+  margin: 0;
+}
+
+#s_table {
+  height: 95vh;
+}
+
+/*---------------------------------------------------------*
+ GAME PAGE STYLING
+/*---------------------------------------------------------*/
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+  body{
+    background-color: #3c6fff;
+  }
+
+  .container{
+    width: min(90%, 31.25em);
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    background-color: #ffffff;
+    padding: 4em 2em;
+    border-radius: 0.5em;
+    box-shadow: -1.5em -1.5em;
+    text-align: center;
+  }
+  h3{
+    font-size: 1.2em;
+    font-weight: 500;
+    line-height: 2em;
+    color: #303030;
+  }
+  .input-wrapper{
+     width: 70%;
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  gap: 1em;
+  margin: 3em auto 1.5em auto;
+  }
+  input[type="number"]{
+    width: 100%;
+    padding: 1em;
+    font-size: 1.2em;
+    text-align: center;
+border: 2px solid #adaeae;
+  border-radius: 0.3em;
+  outline: none;
+  appearance: text-field;
+  -moz-appearance: textfield;
+  }
+  input[type="number"]::-webkit-outer-spin-button,
+  input[type="number"]::-webkit-inner-spin-button{ 
+   -webkit-appearance: none;
+  margin: 0;
+  }
+  input[type="number"]:focus{
+    border-color: #3cffff;
+  }
+  button{
+    font-size: 1em;
+  background-color: #c6fff;
+  color: #ffffff;
+  border: none;
+  outline: none;
+  border-radius: 0.5em;
+  font-weight: 500;
+  cursor: pointer;
+  }
+  #restart{
+    margin: 0 auto 0 auto;
+    padding: 0.8em 1 em:0;
+    display:none;
+  }
+  .result{
+    margin-top: 1em;
+  }
+p{
+  font-size: 1em;
+  font-weight: 400;
+  color: #565b86;
+  word-break: break-all;
+}
+  .error,
+  .success {
+    padding: 0.5em 0;
+    border-radius: 0.3em;
+    margin-bottom: 1em;
+    animation: pop 0.4s forwards;
+    transform: scale(0);
+  }
+  .error{
+    background-color: #ffccfc;
+    color: #ff3;
+  }
+  .success{
+    background-color: #b9f;
+    color: #05c451;
+  }
+  @keyframes pop {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+  
+/*------------------------------------------------------------*
+  REGISTRATION page styling
+/*------------------------------------------------------------*/
+#gm_registrationPage {
+  height:  86vh;
+}
+
+.transparentBG {
+  background: rgba(169, 169, 169, 0.7);
+  color: black;
+}
+
+/*------------------------------------------------------------*
+  ADMIN page & BUTTON styling
+/*------------------------------------------------------------*/
+#gm_adminPage {
+  display: none;
+  height: 86vh;
+  overflow: scroll;
+}
+
+#b_lpAdmin {
+  display: none;   /* none = don't display element */
+}
+
+#b_gpAdmin {
+  display: none;   /* none = don't display element */
+}
+
+/*************************************************************
+/*    END OF CSS
+*************************************************************/

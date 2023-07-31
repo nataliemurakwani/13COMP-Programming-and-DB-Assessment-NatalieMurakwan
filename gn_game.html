@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>13COMP assessment</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="13COMP assessment">
+  <meta name="author" content="?????">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="Images/dtec_favicon.PNG">
+
+  <!-- stylesheets -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+
+<body onload="if_load();" class="w3-container w3-white">
+  <div class="container">
+    <div id="game">
+      <h3>
+        Guess the Number between 1-100
+      </h3>
+      <div class="input-wrapper">
+        <input type="number" placeholder="00" id="guess" />
+        <button id="check-btn">Guess</button>
+      </div>
+      <p id="no-of-guesses">No. Of Guesses: 0</p>
+      <p id="guessed-nums">Guessed Numbers are: None</p>
+    </div>
+    <button id="restart">Restart</button>
+    <div class="result">
+      <div id="hint"></div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.5.0/p5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/addons/p5.sound.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+  <script src="https://p5play.org/v3/planck.min.js"></script>
+  <script src="https://p5play.org/v3/p5play.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-database.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-analytics.js"></script>
+  <script src="log_manager.js"></script>
+  <script src="if_manager.js"></script>
+  <script src="reg_manager.js"></script>
+  <script src="fb_io.js"></script>
+  <script src="gn_game.js"></script>
+  <script src="gs_manager.js"></script>
+  <script src="ad_manager.js"></script>
+  <script src="gl_manager.js"></script>
+  <script src="si_game.js"></script>
+  <script src="fb_procFunctions.js"></script>
+  <script src="fb_readFunctions.js"></script>
+  <script src="fb_writeFunctions.js"></script>
+  </html>
+<!--*************************************************************
+  END OF INDEX.HTML
+**************************************************************-->
